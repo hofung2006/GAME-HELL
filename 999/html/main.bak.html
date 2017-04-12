@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Game Hell</title>
+<style type="text/css">
+<!--
+.style1 {color: #3399CC}
+/*set style of GameHell Title*/
+.style2 {
+	font-size: 90px;
+	font-family: Algerian, serif, monospace;
+	color: #FFFFFF;
+	text-shadow: 10px 5px #762E7D;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    margin: 2px 0;
+    border: none;
+    cursor: pointer;
+	border-radius: 12px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #FFFFFF;
+	color: black;
+    opacity: 0.8;
+}
+.button2 {
+    background-color: black;
+    color: white;
+    padding: 10px 18px;
+    margin: 2px 0;
+    border: none;
+    cursor: pointer;
+	border-radius: 12px;
+    width: auto;
+}
+
+.button2:hover {
+    background-color: #FFFFFF;
+	color: black;
+    opacity: 0.8;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+body {
+	background-color: #3E3C3C;
+}
+.style4 {font-size: 50px; color: #CCCCCC; }
+.style5 {
+	font-size: 40px;
+	color: #CCCCCC;
+}
+#heading{
+background-color: black;
+}
+.sign{
+	font-size: 20px;
+}
+-->
+</style>
+</head>
+
+<body>
+<table id="heading" width="100%" border="0">
+  <tr>
+    <th width="9%" height="108" rowspan="2" scope="col"><img src="img/gamehell.jpg" width="199" height="148" /></th>
+    <th onclick="self.location='main.html'" width="69%" rowspan="2" scope="col"><span class="style2">GAME HELL </span></th>
+    <th width="6%" height="63" scope="col">&nbsp;</th>
+    <th width="8%" scope="col"><button class"sign" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</button> </th>
+    <th width="8%" scope="col"><button class"sign" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button> </th>
+  </tr>
+  <tr>
+  
+    <th colspan="3" scope="col"><form id="form1" name="form1" method="post" action="">
+        <label>
+         <input type="text" name="textfield" placeholder="search" />
+        </label>
+      </form>
+    </th>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr>
+    <th scope="col"><img src="img/mainpage/first.jpg" width="790" height="250" /></th>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr>
+    <th colspan="2" scope="col"><div align="left" class="style4">Recommend:</div></th>
+    <th scope="col"><span class="style5">More</span></th>
+  </tr>
+  <tr>
+    <td width="33%"><div align="center"><img src="img/mainpage/recommend1.jpg" width="397" height="397" class="style1" /></div></td>
+    <td width="34%"><div align="center"><img src="img/mainpage/recommend2.jpg" width="397" height="397" /></div></td>
+    <td width="33%"><div align="center"><img src="img/mainpage/recommend2.jpg" width="397" height="397" /></div></td>
+  </tr>
+</table>
+<table width="100%" border="0">
+  <tr>
+    <th colspan="2" scope="col"><div align="left" class="style4">Newest:</div></th>
+    <th scope="col"><span class="style5">More</span></th>
+  </tr>
+  <tr>
+    <td width="33%"><div align="center"><img src="img/mainpage/recommend1.jpg" width="397" height="397" /></div></td>
+    <td width="34%"><div align="center"><img src="img/mainpage/recommend2.jpg" width="397" height="397" /></div></td>
+    <td width="33%"><div align="center"><img src="img/mainpage/recommend2.jpg" width="397" height="397" /></div></td>
+  </tr>
+</table>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" id="signinform">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/mainpage/log.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" onclick="self.location='userhome.html'">Sign In</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" id="signupform">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/mainpage/log.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+	  <label><b>Enter Password again</b></label>
+      <input type="password" placeholder="Enter Password again" name="psw2" required>
+      <label><b>English Name</b></label>
+      <input type="text" placeholder="Enter English Name" name="uengname" required>
+      <label><b>Phone Number</b></label>
+      <input type="text" placeholder="Enter Phone Name" name="utel" required>
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="uemail" required>
+      <label><b>Birthday</b></label>
+      <input type="text" placeholder="Enter Birthday" name="ubirthday" required>
+      <button type="submit" onclick="document.getElementById('id03').style.display='block';document.getElementById('id02').style.display='none'">Sign Up</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<div id="id03" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/mainpage/log.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <p id="signup"> Thank you for your Sign-up!</p>
+      <button type="button" onclick="self.location='userhome.html'" >Go to Home Page</button>
+    </div>
+  </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+//alert(document.documentURI+'AAAAA'+document.baseURI);
+//sumbit signup form
+
+$("#signupform").submit(function(e) {
+
+    var url = "/signup"; // the script where you handle the form input.
+
+    $.ajax({
+           type: "POST",
+           url: url,
+           data: $("#signupform").serialize(), // serializes the form's elements.
+
+         });
+
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+});
+
+
+//sumbit signup form
+//caleb
+$("#signinform").submit(function(e) {
+
+    //var url = "http://localhost:8000/signin"; // the script where you handle the form input.
+
+    $.ajax({
+           type: "POST",
+           url: '/signin',
+           data: $("#signinform").serialize(), // serializes the form's elements.
+		    //test
+        success: function(data){
+				//alert(data);
+				//alert(data.uname);
+				//alert('caleb1');
+				console.log('user:'+data[0].user_name+'count:'+data[0].count);
+
+				
+      },
+      error: function(jqXHR, textStatus, errorThrown){
+          alert('error'+jqXHR+'123'+textStatus+'123'+errorThrown);
+      }         
+      });
+
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+});
+
+
+// Get the modal
+var modal1 = document.getElementById('id01');
+var modal2 = document.getElementById('id02');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if ((event.target == modal1) ||(event.target == modal2))  {
+        modal1.style.display = "none";
+		modal2.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
